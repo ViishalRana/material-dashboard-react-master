@@ -5,6 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Register from "components/Register/Register.js"
 import Login from "components/Login/Login.js"
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Auth() {
   return (
