@@ -145,6 +145,9 @@ const sidebarStyle = theme => ({
       color: whiteColor
     }
   },
+  nested:{
+    paddingLeft: theme.spacing(4),
+  },
   itemLink: {
     width: "auto",
     transition: "all 300ms linear",

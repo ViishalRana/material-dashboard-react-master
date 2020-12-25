@@ -18,6 +18,9 @@
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
+import FinalPlacement from "views/TableList/FinalPlacement.js"
+import Lock from "@material-ui/icons/Lock";
+import List from "@material-ui/icons/List";
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
@@ -45,16 +48,112 @@ const dashboardRoutes = [
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: AdminDashboard,
-    layout: "/admin"
+    layout: "/admin",
+
   },
   {
     path: "/changePassword",
     name: "Change Password",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
+    icon: Lock,
     component: ChangePassword,
-    layout: "/admin"
+    layout: "/admin",
   },
+  // {
+  //   path: '/student',
+  //   name: 'Student',
+  //   icon: Person,
+  //   layout: '/admin',
+  //   subItems:[
+  //     {
+  //       path: "/student/finalPlacement",
+  //       name: "Final Placement",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+  //     {
+  //       path: "/student/doubleOffers",
+  //       name: "Double Offers",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+  //     {
+  //       path: "/student/A1Offers",
+  //       name: "A1 Offers",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+  //     {
+  //       path: "/student/AOffers",
+  //       name: "A Offers",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+  //     {
+  //       path: "/student/summerInternship",
+  //       name: "Summer Internship",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+  //     {
+  //       path: "/student/summerOffers",
+  //       name: "Summer Offers Details",
+  //       icon: List,
+  //       component: FinalPlacement,
+  //       layout: "/admin"
+  //     },
+
+  //   ],
+  // }
+  ,
+  
+      {
+        path: "/finalPlacement",
+        name: "Final Placement",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
+      {
+        path: "/doubleOffers",
+        name: "Double Offers",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
+      {
+        path: "/A1Offers",
+        name: "A1 Offers",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
+      {
+        path: "/AOffers",
+        name: "A Offers",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
+      {
+        path: "/summerInternship",
+        name: "Summer Internship",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
+      {
+        path: "/summerOffers",
+        name: "Summer Offers Details",
+        icon: List,
+        component: FinalPlacement,
+        layout: "/admin"
+      },
   {
     path: "/table",
     name: "Table List",
@@ -109,14 +208,6 @@ const dashboardRoutes = [
     icon: Language,
     component: RTLPage,
     layout: "/rtl"
-  },
-  {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
-    icon: Unarchive,
-    component: UpgradeToPro,
-    layout: "/admin"
   }
 ];
 
