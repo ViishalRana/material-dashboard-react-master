@@ -26,6 +26,8 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import AdminDashboard from "views/Dashboard/adminDashboard.js";
+import SpcMembers from "views/TableList/spcMembers.js"
+
 import ChangePassword from "views/UserProfile/ChangePassword.js";
 import TableList from "views/TableList/TableList.js";
 import Typography from "views/Typography/Typography.js";
@@ -59,6 +61,13 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
+    layout: "/admin"
+  },
+  {
+    path: "/spc-members",
+    name: "SPC Members",
+    icon: "content_paste",
+    component: SpcMembers,
     layout: "/admin"
   },
   {
